@@ -1,0 +1,110 @@
+body{
+    font-family: 'open Sans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: rgb(123, 209, 222);
+font-size: 22px;
+margin: 0px;
+padding: 0px;
+}
+h1{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+   
+}
+header{
+    height: 70px;
+}
+footer{
+    height: 80px; 
+    padding-top: 30px;
+    text-align: center;
+    background-color: rgb(207, 189, 189);
+    border-top: 2px solid crimson;
+}
+nav{
+    width: 100%;
+    background-color: rgb(151, 255, 153);
+    border: 2px solid red;
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav li{
+    list-style-type: none;
+    float: left;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px ;
+    color: rgb(7, 11, 249);
+    text-transform: uppercase;/* pour ecrire en majuscule*/
+    font-size: 25px;
+}
+.table{
+    display: table;
+    margin: 0 auto;
+}
+.menu-index:hover, .presentation{
+    border-top: 5px solid rgb(164, 162, 248);
+    background-color: rgb(250, 246, 119);
+}
+.menu-exp:hover, .parcours{
+    border-top: 5px solid rgb(164, 162, 248);
+    background-color: rgb(250, 246, 119);
+}
+.menu-loisir:hover, .competences{
+    border-top: 5px solid rgb(164, 162, 248);
+    background-color: rgb(250, 246, 119);
+}
+.menu-cont:hover, .recommandation{
+    border-top: 5px solid rgb(164, 162, 248);
+    background-color: rgb(250, 246, 119);
+}
+nav li:hover a{
+    padding: 15px 30px 20px 30px;
+ }
+section{
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 10px;
+    margin-bottom: 10px
+}  
+.sec{
+    margin: 0px 10%;
+}
+.left{
+    float: left;
+    width: 30%;
+}
+.right{
+    float: left;
+    width: 90%; 
+}
+.cleft, .cright, .sousleft, .sousright{
+    width: 50%;
+    float: left;
+}
+.sec::after, .exp::after, .rec::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* pour permettre de reduire la page sans perdre le design*/
+@media screen and (max-width:780px){
+    header{
+        height: 50px;
+    }
+    h1{
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+      }
+      nav li a{
+        font-size: 12px;
+        padding: 10px; 
+      }
+      nav li:hover a{
+        padding: 5px 10px 10px 10px;
+      }
+}
